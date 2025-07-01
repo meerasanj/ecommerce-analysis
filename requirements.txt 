@@ -1,0 +1,10 @@
+streamlit
+python-dotenv
+sqlparse
+sqlvalidator
+sqlglot
+pandas
+huggingface-hub
+transformers
+sentence-transformers
+python-multipart
