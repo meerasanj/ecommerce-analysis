@@ -1,1 +1,1 @@
-# sql-query-assistant
+# ecommerce-analysis
