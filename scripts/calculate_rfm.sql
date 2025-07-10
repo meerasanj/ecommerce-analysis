@@ -3,7 +3,7 @@
 
 # Import necessary libraries
 import duckdb  # For running SQL queries on data frames and CSV files
-import pandas as pd  # For data manipulation (though not directly used here, it's good practice)
+import pandas as pd  # For data manipulation
 
 # This multi-line string holds the main SQL query for calculating RFM metrics.
 
