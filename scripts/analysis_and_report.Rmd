@@ -168,6 +168,9 @@ ggplot(rfm_prepared, aes(x = recency, y = frequency, color = persona, size = mon
     size = "Monetary Value"
   ) +
   theme_minimal()
+
+# Export final, processed data into CSV file for Tableau use
+write.csv(rfm_prepared, "output/olist_tableau_data.csv", row.names = FALSE)
 ```
 
 ## 5. Conclusion & Recommendations
