@@ -85,7 +85,7 @@ The analysis successfully identified four key customer personas:
 
 1.  **Analytical Report:** A detailed PDF report (`analysis_and_report.pdf`) located in the `output/` directory, outlining the methodology, findings, recommendations, as well as sources and further reading.
 2.  **Interactive Dashboard:** A Tableau Public dashboard for exploring the customer segments.
-    * **[Link to Live Dashboard](https://public.tableau.com/views/Olist_Customer_Analysis_Dashboard/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)** 
+    * **[Olist Customer Segmentation Dashboard](https://public.tableau.com/views/Olist_Customer_Analysis_Dashboard/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)** 
 
 ## License
 Copyright (c) 2025 Meera Sanjeevirao
