@@ -213,8 +213,8 @@ Cluster analysis is a broad set of techniques for finding natural groupings or "
 #### K-Means Clustering
 K-Means is a popular and efficient algorithm that partitions data into a pre-specified number (*k*) of clusters. It aims to make the data points within a cluster as similar as possible while making the clusters themselves as distinct as possible.
 
-- **[What is k-means clustering?](https://www.ibm.com/think/topics/k-means-clustering)** - An IBM explanation of how the K-Means algorithm works, including its iterative process of assigning data points and updating cluster centers.
-- **[K-Means Clustering | Definition, Algorithm & How-To Guide](https://www.displayr.com/what-is-k-means-cluster-analysis/)** - A detailed walkthrough of the K-Means algorithm steps with visual examples.
+- **[What is k-means clustering?](https://www.ibm.com/think/topics/k-means-clustering)** - An IBM explanation of how the K-Means algorithm works, including its iterative process of assigning data points and updating cluster centers. Also has an explanation of how the Elbow Method can be utilized.
+- **[K-Means Clustering | The Easier Way To Segment Your Data](https://www.displayr.com/what-is-k-means-cluster-analysis/)** - A detailed walkthrough of the K-Means algorithm steps with visual examples.
 
 #### Elbow Method
 The Elbow Method is a heuristic used to help determine the optimal number of clusters for the K-Means algorithm. It works by plotting the within-cluster sum of squares (WCSS) for a range of cluster counts and identifying the "elbow" of the curve.
