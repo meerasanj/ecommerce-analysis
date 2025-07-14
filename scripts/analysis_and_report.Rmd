@@ -52,7 +52,7 @@ rfm_scaled <- scale(rfm_prepared[, c("log_recency", "log_frequency", "log_moneta
 ## 2. K-Means Clustering
 
 ### Determining Optimal Clusters
-To find the optimal number of segments, we use the Elbow Method. This technique calculates the Total Within-Cluster Sum of Squares (WSS) for different cluster counts (k). We are looking for the "elbow" on the plot—the point where the WSS begins to decrease at a much slower rate. This point indicates the most appropriate number of clusters.
+To find the optimal number of segments, we use the Elbow Method. This technique calculates the Total Within-Cluster Sum of Squares (WSS) for different cluster counts (k). We are looking for the "elbow" on the plot, which is the point where the WSS begins to decrease at a much slower rate. This point indicates the most appropriate number of clusters.
 
 The plot below shows a distinct elbow at k=4, making 4 clusters a reasonable choice for this analysis.
 
@@ -142,14 +142,7 @@ kable(cluster_summary, caption = "Customer Segment Characteristics")
 Visualizations help illustrate the distinct characteristics of our segments.
 
 ### RFM Segment Scatter Plot
-This plot visualizes the distinct characteristics of our four segments. The x-axis (Recency) is on a log scale to better distribute the customers.
-
-We can see a clear separation:
-
-**Loyal Customers** and **New Customers** are on the right side of the plot, indicating low recency (they've purchased recently). They are differentiated by their frequency and spending.
-**Hibernating High Spenders** and **At-Risk Low Spenders** are on the left (high recency). 
-
-The key difference between them is their historical spending, which is represented by the size of the points.
+This plot visualizes the distinct characteristics of our four segments. The x-axis shows Recency on a log scale, where customers who purchased recently are on the left (low recency) and those who purchased long ago are on the right (high recency).
 
 ```{r, fig.width=10, fig.height=7}
 # Add the persona names back to the main data frame for plotting
@@ -170,8 +163,25 @@ ggplot(rfm_prepared, aes(x = recency, y = frequency, color = persona, size = mon
   theme_minimal()
 
 # Export final, processed data into CSV file for Tableau use
-write.csv(rfm_prepared, "output/olist_tableau_data.csv", row.names = FALSE)
+#write.csv(rfm_prepared, "output/olist_tableau_data.csv", row.names = FALSE)
+# Create an 'output' directory if it doesn't already exist
+if (!dir.exists("output")) {
+  dir.create("output")
+}
+
+# Now, write the CSV file into that directory
+write.csv(
+  rfm_prepared, 
+  "output/olist_tableau_data.csv", 
+  row.names = FALSE
+)
 ```
+
+We can see a clear separation:
+
+- **New Customers** are clustered on the far left, indicating they are the most recent purchasers. They all have a low frequency, as they are first-time buyers.
+- **Loyal Customers** are distinguished by their high Frequency, appearing higher up on the chart than any other group. They are spread across the recency scale.
+- **Hibernating High Spenders** and **At-Risk Low Spenders** are both concentrated on the lower right side of the plot, showing they have not purchased in a long time. The key difference is their monetary value: the Hibernating High Spenders are represented by larger dots, indicating their significant past spending.
 
 ## 5. Conclusion & Recommendations
 
