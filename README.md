@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-This project performs a customer segmentation analysis for Olist, a large Brazilian e-commerce platform that connects small businesses with customers across major marketplaces. The goal is to move beyond treating all customers as a single entity and instead identify distinct, actionable groups based on their purchasing behavior.
+This project consists of a customer segmentation analysis for Olist, a large Brazilian e-commerce platform that connects small businesses with customers across major marketplaces. The goal is to move beyond treating all customers as a single entity and instead, identify distinct, actionable groups based on customers' purchasing behavior.
 
-By leveraging RFM (Recency, Frequency, Monetary) analysis and K-Means clustering, I segmented the customer base into meaningful personas. These insights provide a data-driven foundation for developing targeted marketing strategies, improving customer retention, and maximizing customer lifetime value.
+By leveraging RFM (Recency, Frequency, Monetary) analysis and K-Means clustering, the customer base is segmented into meaningful personas. These insights provide a data-driven foundation for developing targeted marketing strategies, improving customer retention, and maximizing customer lifetime value.
 
 The final output of this project includes a detailed analytical report and an interactive Tableau dashboard designed for business stakeholders to explore the customer segments.
 
@@ -57,7 +57,7 @@ The analysis successfully identified four key customer personas:
 ### Setup
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/meerasanj/ecommerce-analysis.git](https://github.com/meerasanj/ecommerce-analysis.git)
+    git clone https://github.com/meerasanj/ecommerce-analysis.git
     cd ecommerce-analysis
     ```
 2.  **Install Python Packages:** Open a terminal and run:
@@ -83,7 +83,7 @@ The analysis successfully identified four key customer personas:
 
 ## Final Outputs
 
-1.  **Analytical Report:** A detailed PDF report (`analysis_and_report.pdf`) located in the `output/` directory, outlining the methodology, findings, and recommendations.
+1.  **Analytical Report:** A detailed PDF report (`analysis_and_report.pdf`) located in the `output/` directory, outlining the methodology, findings, recommendations, as well as sources and further reading.
 2.  **Interactive Dashboard:** A Tableau Public dashboard for exploring the customer segments.
     * **[Link to Live Dashboard](https://public.tableau.com/views/Olist_Customer_Analysis_Dashboard/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)** 
 
