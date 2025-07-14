@@ -163,18 +163,7 @@ ggplot(rfm_prepared, aes(x = recency, y = frequency, color = persona, size = mon
   theme_minimal()
 
 # Export final, processed data into CSV file for Tableau use
-#write.csv(rfm_prepared, "output/olist_tableau_data.csv", row.names = FALSE)
-# Create an 'output' directory if it doesn't already exist
-if (!dir.exists("output")) {
-  dir.create("output")
-}
-
-# Now, write the CSV file into that directory
-write.csv(
-  rfm_prepared, 
-  "output/olist_tableau_data.csv", 
-  row.names = FALSE
-)
+write.csv(rfm_prepared, "output/olist_tableau_data.csv", row.names = FALSE)
 ```
 
 We can see a clear separation:
